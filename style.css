@@ -1,0 +1,617 @@
+body{
+    margin:0;
+    background:#ffffff;
+    font-family:Arial, sans-serif;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    padding:20px;
+    justify-items:center;
+}
+
+/* PHONE DESIGN (your original) */
+.phone{
+    width:160px;
+    height:320px;
+    background:#000;
+    border:5px solid #222;
+    border-radius:30px;
+    padding:8px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    position:relative;
+}
+
+.notch{
+    width:70px;
+    height:18px;
+    background:#111;
+    border-radius:20px;
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:10;
+}
+
+.screen{
+    width:100%;
+    height:100%;
+    border-radius:22px;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    overflow:hidden;
+    position:relative;
+}
+
+.time{
+    text-align:center;
+    color:white;
+    font-size:14px;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+.apps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+    padding:20px 10px;
+}
+
+.app{
+    width:30px;
+    height:30px;
+    background:rgba(255,255,255,0.3);
+    border-radius:8px;
+    margin:auto;
+}
+
+.dock{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    width:85%;
+    height:45px;
+    background:rgba(255,255,255,0.2);
+    border-radius:18px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/* ── PHONE 1: Barangay Food Request System ── */
+.bfrs-screen {
+    background: #c8bfb0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bfrs-blob {
+    position: absolute;
+    border-radius: 50%;
+    background: #b5a090;
+    opacity: 0.7;
+}
+
+.bfrs-blob-top {
+    width: 70px;
+    height: 70px;
+    top: -20px;
+    right: -15px;
+}
+
+.bfrs-blob-bottom {
+    width: 60px;
+    height: 60px;
+    bottom: -15px;
+    left: -15px;
+}
+
+.bfrs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 0 12px;
+    z-index: 1;
+}
+
+.bfrs-icon svg {
+    width: 44px;
+    height: 44px;
+}
+
+.bfrs-title {
+    color: #8B2020;
+    font-size: 8px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 4px;
+}
+
+.bfrs-subtitle {
+    color: #555;
+    font-size: 5.5px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.bfrs-btn {
+    margin-top: 10px;
+    background: #fff;
+    color: #2e7d5e;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 18px;
+    font-size: 6.5px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.bfrs-dots {
+    position: absolute;
+    bottom: 14px;
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+}
+
+.dot-active {
+    width: 14px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* ── PHONE 2: Role Selection ── */
+.role-screen {
+    background: #c8bfb0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 8px 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.role-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 3px;
+}
+
+.role-sdg-badge {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 5.5px;
+    font-weight: 700;
+    color: #555;
+}
+
+.role-sdg-num {
+    background: #e07b2a;
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font-size: 6px;
+    font-weight: 800;
+}
+
+.role-title {
+    color: #3b1a0a;
+    font-size: 6.5px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.role-subtitle {
+    color: #e07b2a;
+    font-size: 5px;
+    text-align: center;
+}
+
+.role-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    flex: 1;
+    margin: 8px 0 6px;
+}
+
+.role-card {
+    width: 100%;
+    background: #d6cfc6;
+    border-radius: 8px;
+    border: 1.5px solid #e0b84a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 3px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.role-card-admin {
+    border-color: #e07b2a;
+}
+
+.role-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-circle-yellow { background: #f5c518; }
+.role-circle-orange { background: #e07b2a; }
+
+.role-name {
+    font-size: 7px;
+    font-weight: 800;
+    color: #3b1a0a;
+}
+
+.role-desc {
+    font-size: 4.5px;
+    color: #7a4a2a;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.role-sdg-footer {
+    font-size: 4.5px;
+    color: #e07b2a;
+    text-align: center;
+}
+
+/* ── PHONES 3 & 4: Shared Header ── */
+.form-screen,
+.track-screen {
+    background: #e8e4df !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.form-header {
+    background: #8B3A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 8px 5px;
+    flex-shrink: 0;
+}
+
+.form-hamburger {
+    color: #fff;
+    font-size: 9px;
+}
+
+.form-back-btn {
+    background: #fff;
+    color: #8B3A1A;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 5.5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ── PHONE 3: Form Body ── */
+.form-body {
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow: hidden;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 4px;
+}
+
+.form-item-disabled {
+    opacity: 0.5;
+}
+
+.form-check {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.form-item-name {
+    font-size: 5px;
+    color: #333;
+    flex: 1;
+}
+
+.form-avail {
+    color: #888;
+    font-size: 4.5px;
+}
+
+.form-badge {
+    font-size: 4px;
+    border-radius: 8px;
+    padding: 1px 4px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.form-badge-in  { background: #d4edda; color: #2e7d32; }
+.form-badge-low { background: #fff9c4; color: #856404; }
+.form-badge-out { background: #fde8e8; color: #c62828; }
+
+.form-field-label {
+    font-size: 5px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 2px;
+}
+
+.form-req { color: #c62828; }
+
+.form-input-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 4.5px;
+    color: #aaa;
+}
+
+.form-textarea-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 4.5px;
+    color: #aaa;
+    height: 18px;
+}
+
+.form-submit-btn {
+    background: #e07b2a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 0;
+    font-size: 5.5px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.form-clear-btn {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px 0;
+    font-size: 5.5px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ── PHONE 4: Track Body ── */
+.track-body {
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.track-title {
+    font-size: 7px;
+    font-weight: 800;
+    color: #222;
+}
+
+.track-subtitle {
+    font-size: 4.5px;
+    color: #555;
+    margin-top: -2px;
+}
+
+.track-card {
+    background: #fff;
+    border-radius: 7px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.track-select {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 4.5px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-info-card {
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 7px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.track-info-title {
+    font-size: 5.5px;
+    font-weight: 800;
+    color: #3730a3;
+    margin-bottom: 2px;
+}
+
+.track-info-item {
+    font-size: 4px;
+    color: #4338ca;
+    line-height: 1.4;
+}
+
+/* ── PHONE 5+: Image Display ── */
+.image-screen {
+    background: #000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+/* ── PHONE 5 (old admin) ── */
+.admin-screen {
+    background: #e8e4df !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.admin-header {
+    background: #2d4a3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8px 5px;
+    flex-shrink: 0;
+}
+
+.admin-title {
+    color: #fff;
+    font-size: 7px;
+    font-weight: 800;
+}
+
+.admin-date {
+    color: #8fbc8f;
+    font-size: 4.5px;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    padding: 6px 8px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.stat-num {
+    font-size: 12px;
+    font-weight: 800;
+    color: #2d4a3e;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 4.5px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.admin-recent {
+    flex: 1;
+    background: #fff;
+    margin: 0 8px 8px;
+    border-radius: 7px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.admin-section-title {
+    font-size: 5.5px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-req-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 0;
+    font-size: 4px;
+}
+
+.req-name {
+    flex: 1;
+    color: #333;
+}
+
+.req-badge {
+    font-size: 3.5px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.dot-pending { background: #f5c518; }
+.dot-approve { background: #2ecc71; }
+.dot-complete { background: #95a5a6; }
+
+.pending-badge { background: #fef3c7; color: #92400e; }
+.approve-badge { background: #d1fae5; color: #065f46; }
+.complete-badge { background: #e5e7eb; color: #374151; }
