@@ -1,176 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>16 Phone Layout</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>16 Phone Layout</title>
+  <link rel="stylesheet" href="style.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
 </head>
 <body>
 
-<div class="grid">
+  <h1>Phone <span>16</span> Series</h1>
 
-    <!-- 16 PHONES -->
+  <div class="phone-grid">
 
-    <!-- PHONE 1: Splash Screen -->
-    <div class="phone">
-        <div class="notch"></div>
-        <div class="screen bfrs-screen">
-            <div class="bfrs-blob bfrs-blob-top"></div>
-            <div class="bfrs-blob bfrs-blob-bottom"></div>
-            <div class="bfrs-content">
-                <div class="bfrs-icon">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="22" stroke="#8B2020" stroke-width="2.5"/>
-                        <circle cx="24" cy="24" r="16" stroke="#8B2020" stroke-width="2"/>
-                        <circle cx="24" cy="20" r="6" fill="#8B2020"/>
-                        <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="#8B2020"/>
-                    </svg>
-                </div>
-                <div class="bfrs-title">Barangay Food Request System</div>
-                <div class="bfrs-subtitle">A simple platform for requesting and managing food assistance in the community.</div>
-                <button class="bfrs-btn">Get Started</button>
-            </div>
-            <div class="bfrs-dots">
-                <span class="dot dot-active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+    <!-- ========== PHONE 1 - Landing Page ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/1.jpg" alt="Landing Page">
         </div>
+      </div>
+      <div class="phone-label">Landing Page</div>
     </div>
 
-    <!-- PHONE 2: Role Selection -->
-    <div class="phone">
-        <div class="notch"></div>
-        <div class="screen role-screen">
-            <div class="role-top">
-                <div class="role-sdg-badge"><span class="role-sdg-num">2</span> SDG</div>
-                <div class="role-title">Barangay Food Request System</div>
-                <div class="role-subtitle">Select your role to continue</div>
-            </div>
-            <div class="role-cards">
-                <div class="role-card role-card-resident">
-                    <div class="role-circle role-circle-yellow">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                            <circle cx="16" cy="13" r="6" fill="#2563eb"/>
-                            <path d="M4 28c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="#2563eb"/>
-                        </svg>
-                    </div>
-                    <div class="role-name">Resident</div>
-                    <div class="role-desc">Request food assistance and track your applications</div>
-                </div>
-                <div class="role-card role-card-admin">
-                    <div class="role-circle role-circle-orange">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                            <path d="M16 4l10 5v8c0 5-4 9-10 11C10 26 6 22 6 17V9l10-5z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
-                        </svg>
-                    </div>
-                    <div class="role-name">Admin</div>
-                    <div class="role-desc">Manage requests and oversee food distribution</div>
-                </div>
-            </div>
-            <div class="role-sdg-footer">Supporting SDG 2: Zero Hunger</div>
+    <!-- ========== PHONE 2 - SDG 2 Info ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/2.jpg" alt="SDG 2 Info">
         </div>
+      </div>
+      <div class="phone-label">SDG 2 Info</div>
     </div>
 
-    <!-- PHONE 3: Food Request Form -->
-    <div class="phone">
-        <div class="notch"></div>
-        <div class="screen form-screen">
-            <div class="form-header">
-                <span class="form-hamburger">&#9776;</span>
-                <button class="form-back-btn">&#8592; Back</button>
-            </div>
-            <div class="form-body">
-                <div class="form-item form-item-disabled">
-                    <span class="form-check"></span>
-                    <span class="form-item-name">Instant Noodles <span class="form-avail">0 available</span></span>
-                    <span class="form-badge form-badge-out">Out of Stock</span>
-                </div>
-                <div class="form-item">
-                    <span class="form-check"></span>
-                    <span class="form-item-name">Cooking Oil <span class="form-avail">63 available</span></span>
-                    <span class="form-badge form-badge-in">In Stock</span>
-                </div>
-                <div class="form-item">
-                    <span class="form-check"></span>
-                    <span class="form-item-name">Sugar <span class="form-avail">10 available</span></span>
-                    <span class="form-badge form-badge-low">Low Stock</span>
-                </div>
-                <div class="form-item">
-                    <span class="form-check"></span>
-                    <span class="form-item-name">Coffee <span class="form-avail">22 available</span></span>
-                    <span class="form-badge form-badge-in">In Stock</span>
-                </div>
-                <div class="form-field-label">Number of Household Members <span class="form-req">*</span></div>
-                <div class="form-input-box">Enter number of members</div>
-                <div class="form-field-label">Reason for Request <span class="form-req">*</span></div>
-                <div class="form-textarea-box">Briefly describe your situation...</div>
-                <div class="form-field-label">Contact Number <span class="form-req">*</span></div>
-                <div class="form-input-box">Enter contact number</div>
-                <button class="form-submit-btn">Submit Request</button>
-                <button class="form-clear-btn">Clear Form</button>
-            </div>
+    <!-- ========== PHONE 3 - Role Selection ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/3.jpg" alt="Role Selection">
         </div>
+      </div>
+      <div class="phone-label">Role Selection</div>
     </div>
 
-    <!-- PHONE 4: Track Requests -->
-    <div class="phone">
-        <div class="notch"></div>
-        <div class="screen track-screen">
-            <div class="form-header">
-                <span class="form-hamburger">&#9776;</span>
-                <button class="form-back-btn">&#8592; Back</button>
-            </div>
-            <div class="track-body">
-                <div class="track-title">Track Your Requests</div>
-                <div class="track-subtitle">Check the status of your food assistance requests</div>
-                <div class="track-card">
-                    <div class="form-field-label">Household Head Name <span class="form-req">*</span></div>
-                    <div class="form-input-box">Enter full name</div>
-                    <div class="form-field-label">Purok <span class="form-req">*</span></div>
-                    <div class="track-select">Select your Purok &#8964;</div>
-                    <button class="form-submit-btn">Track Requests</button>
-                    <button class="form-clear-btn">Clear</button>
-                </div>
-                <div class="track-info-card">
-                    <div class="track-info-title">How to Track Your Requests</div>
-                    <div class="track-info-item">· Enter your household head name exactly as submitted in your request</div>
-                    <div class="track-info-item">· Select the purok where your household is registered</div>
-                    <div class="track-info-item">· Click "Track Requests" to view your complete request history</div>
-                    <div class="track-info-item">· You can see the status of all your submitted requests</div>
-                </div>
-            </div>
+    <!-- ========== PHONE 4 - Admin Login ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/4.jpg" alt="Admin Login">
         </div>
+      </div>
+      <div class="phone-label">Admin Login</div>
     </div>
 
-<!-- PHONES 5–16: Photo Display -->
+    <!-- ========== PHONE 5 - Dashboard ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/5.jpg" alt="Dashboard">
+        </div>
+      </div>
+      <div class="phone-label">Dashboard</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="4236de85-4d14-43ab-9e8d-fbb754d1608a.jpg" alt="Screen 5"></div></div>
+    <!-- ========== PHONE 6 - Master List ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/6.jpg" alt="Master List">
+        </div>
+      </div>
+      <div class="phone-label">Master List</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="5324235e-ea76-428a-bb21-93bf6bb8fd91.jpg" alt="Screen 6"></div></div>
+    <!-- ========== PHONE 7 - Distribution ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/7.jpg" alt="Distribution Records">
+        </div>
+      </div>
+      <div class="phone-label">Distribution</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="55b428cd-4430-45c4-9f1e-ea952b254472.jpg" alt="Screen 7"></div></div>
+    <!-- ========== PHONE 8 - Reports ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/8.jpg" alt="Reports">
+        </div>
+      </div>
+      <div class="phone-label">Reports</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="8df8d7e7-e2a9-494f-8cef-56eb8fa6b6af.jpg" alt="Screen 8"></div></div>
+    <!-- ========== PHONE 9 - Purok History ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/9.jpg" alt="Purok Household History">
+        </div>
+      </div>
+      <div class="phone-label">Purok History</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="95e2152f-a646-4d81-acb9-509702bed405.jpg" alt="Screen 9"></div></div>
+    <!-- ========== PHONE 10 - Household Report ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/10.jpg" alt="Household Request Report">
+        </div>
+      </div>
+      <div class="phone-label">Household Report</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="98771296-d8c1-4d9b-b1c7-b2bc4cef06e3.jpg" alt="Screen 10"></div></div>
+    <!-- ========== PHONE 11 - Household Details ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/11.jpg" alt="Household Details">
+        </div>
+      </div>
+      <div class="phone-label">Household Details</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="9df861c0-19c6-4ea1-8ced-ba9f665a76b5.jpg" alt="Screen 11"></div></div>
+    <!-- ========== PHONE 12 - Report Summary ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/12.jpg" alt="Report Summary">
+        </div>
+      </div>
+      <div class="phone-label">Report Summary</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="ac3f00fa-c3c7-4b1c-b175-20e8e2cc9ad5.jpg" alt="Screen 12"></div></div>
+    <!-- ========== PHONE 13 - Inventory ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/13.jpg" alt="Inventory Management">
+        </div>
+      </div>
+      <div class="phone-label">Inventory</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="b10cf75e-d12b-4510-9e1a-ef403323946b.jpg" alt="Screen 13"></div></div>
+    <!-- ========== PHONE 14 - Settings Admin ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/14.jpg" alt="Settings - Admin">
+        </div>
+      </div>
+      <div class="phone-label">Settings (Admin)</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="b168d00c-2d0b-495d-9d7a-560cadf2d06e.jpg" alt="Screen 14"></div></div>
+    <!-- ========== PHONE 15 - Settings Purok ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/15.jpg" alt="Settings - Purok">
+        </div>
+      </div>
+      <div class="phone-label">Settings (Purok)</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="c00a8e81-ede7-4756-8932-64efac5b2a16.jpg" alt="Screen 15"></div></div>
+    <!-- ========== PHONE 16 - Track Requests ========== -->
+    <div class="wrapper">
+      <div class="phone">
+        <div class="screen">
+           <img src="img/16.jpg" alt="Track Requests">
+        </div>
+      </div>
+      <div class="phone-label">Track Requests</div>
+    </div>
 
-    <div class="phone"><div class="notch"></div><div class="screen image-screen"><img class="phone-image" src="ccf38fd6-c2be-4e5a-bcc9-7e6a6bc13585.jpg" alt="Screen 16"></div></div>
-
-</div>
+  </div><!-- /phone-grid -->
 
 </body>
 </html>
